@@ -26,5 +26,5 @@ Observe the logs:
 2023-10-17 00:45:22,339 ERROR [activity] [main.py:14] [trace_id=0 span_id=0 resource.service.name=log-issue-repro trace_sampled=False] - Log with 0 trace-id and span-id
 ```
 
-First log line has proper trace-id and span-id
+First log line has proper trace-id and span-id<br>
 Second log line from exception handler has trace-id and span-id as 0
