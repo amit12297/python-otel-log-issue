@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "otel-log-issue"
+version = "0.1.0"
+description = "Sample project to reproduce 0 trace-id/span-id when logging from unhandled exception handler"
+authors = ["Amit Vikram <vikramamit39@gmail.com>"]
+readme = "README.md"
+packages = [{include = "otel_log_issue"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.92.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+opentelemetry-distro = "^0.41b0"
+opentelemetry-instrumentation-starlette = "^0.41b0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
